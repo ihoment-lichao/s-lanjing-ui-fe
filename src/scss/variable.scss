@@ -1,0 +1,51 @@
+// scss全局变量
+$page-back-color: #eef3fa; //页面背景色
+$border-line-color: #ebeef5; //边框颜色
+$split-line-color: #ebeef5; //分割线颜色
+$grey-text-color: #979797; //灰色文本
+$href-text-color: #3375f5; //跳转链接文本颜色
+$red-text-color: #d9001b; //红色文本
+$compare-up-color: #ff4242; //对比增长颜色
+$compare-down-color: #0ad60e; //对比降低颜色
+$compare-flat-color: #a5aeba; //对比不变颜色
+$page-family-medium: PingFangSC-Medium, PingFang SC; //粗体
+$page-family-regular: PingFangSC-Regular, PingFang SC; //常规
+$page-family-semibold: PingFangSC-Semibold, PingFang SC; //中粗体
+
+.grey-text-color {
+  color: $grey-text-color;
+}
+.href-text-color {
+  color: $href-text-color;
+}
+.red-text-color {
+  color: $red-text-color;
+}
+.compare-up-color {
+  color: $compare-up-color;
+}
+.compare-down-color {
+  color: $compare-down-color;
+}
+.compare-flat-color {
+  color: $compare-flat-color;
+}
+.text-regular {
+  font-family: $page-family-regular;
+}
+.text-medium {
+  font-family: $page-family-medium;
+}
+.text-semibold {
+  font-family: $page-family-semibold;
+}
+
+.star-level-1 {
+  color: #f7761b;
+}
+.star-level-2 {
+  color: #3375f5;
+}
+.star-level-3 {
+  color: #00df04;
+}

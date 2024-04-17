@@ -1,0 +1,155 @@
+// 卡片样式重置
+.el-card {
+  border-radius: 8px !important;
+  padding: 0 !important;
+  --el-card-padding: 8px !important;
+}
+.el-dialog__body {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+//管理》列表活动状态（下拉选项 ）暂停  开启  归档
+.select-paused-status .el-input .el-input__inner,
+.paused-status {
+  background: rgba(255, 213, 57, 0.4);
+  border-color: #ffd539;
+}
+.select-enabled-status .el-input .el-input__inner,
+.enabled-status {
+  background: rgba(0, 223, 4, 0.4);
+  border-color: #00df04;
+}
+.select-archived-status .el-input .el-input__inner,
+.archived-status {
+  color: #e4e7ed;
+  background: #f5f7fa;
+  border-color: #c0c4cc;
+}
+//自定义表格第一合计行样式
+.table-summary-row {
+  height: 40px !important;
+  font-size: 13px !important;
+  font-family: PingFangSC-Medium, PingFang SC !important;
+}
+.expand-inner-table {
+  border: none !important;
+}
+.expand-inner-table .el-table__body-wrapper.is-scrolling-left {
+  overflow-x: hidden;
+}
+.expand-inner-table .el-table td.el-table__cell {
+  padding: 0;
+  border-bottom: none;
+}
+.expand-inner-table .el-table .el-table__inner-wrapper::before {
+  z-index: -1;
+}
+//表单item下边距
+.el-form-item.el-form-item--default {
+  margin-bottom: 12px !important;
+}
+.el-form-item.el-form-item--small {
+  margin-bottom: 8px !important;
+}
+
+// tab样式
+.custom-tabs > .el-tabs__content {
+}
+//标签poper
+.el-popper.is-customized {
+  padding: 6px 12px;
+  background: linear-gradient(90deg, rgb(159, 229, 151), rgb(204, 229, 129));
+}
+.el-popper.is-customized .el-popper__arrow::before {
+  background: linear-gradient(45deg, #b2e68d, #bce689);
+  right: 0;
+}
+//菜单poper
+.el-popper.custom-menu-popper {
+  border: 0 !important;
+  left: 64px !important;
+  background: #fff !important;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+}
+.el-menu--vertical.custom-menu-popper > .el-menu--popup {
+  color: #8aa4af !important;
+  background: #fff;
+  min-width: 160px;
+}
+.el-menu--vertical.custom-menu-popper > .el-menu--popup .el-menu-item.is-active,
+.el-menu--vertical.custom-menu-popper > .el-menu--popup :hover {
+  color: #409eff !important ;
+  background: #fff !important;
+}
+//原生滚动跳样式
+
+/*滚动条样式*/
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: rgba(144, 147, 153, 0.3);
+  cursor: pointer;
+}
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+
+/** 新增广告活动左右移箭头 */
+.create-ads-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+.create-ads-wrapper .search-section {
+  padding: 12px 25px;
+}
+.create-ads-back {
+  padding: 12px;
+  font-size: 15px;
+  color: #3375f5;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.create-ads-submit {
+  text-align: center;
+  padding: 30px 0 60px;
+}
+.arrows-lt-rt-row {
+  display: flex;
+}
+.arrows-lt-rt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+.icon-arrow-left {
+  width: 24px;
+  height: 24px;
+  margin: 0 3px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("@/assets/svg/zuoyi.svg");
+}
+
+.icon-arrow-right {
+  width: 24px;
+  height: 24px;
+  margin: 0 3px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("@/assets/svg/youyi.svg");
+}
+// css阻止默认事件
+.css-contain-disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.6;
+}

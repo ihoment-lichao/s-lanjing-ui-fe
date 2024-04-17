@@ -1,0 +1,50 @@
+// global transition css
+/* fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+/* fade-transform */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all 0.2s;
+}
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-16px);
+}
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(16px);
+}
+//图标旋转
+@keyframes iconRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+//图标呼吸效果
+@keyframes iconBreath {
+  0% {
+    scale: 0.5;
+  }
+  25% {
+    width: 1;
+  }
+  75% {
+    width: 0.5;
+  }
+  100% {
+    width: 1;
+  }
+}

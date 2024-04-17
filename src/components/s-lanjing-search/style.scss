@@ -1,0 +1,33 @@
+.search-area-box {
+  width: 100%;
+  padding-bottom: 8px;
+  background-color: $page-back-color;
+}
+
+:deep(.el-select .el-select__tags .el-tag) {
+  margin: 0 4px;
+}
+:deep(.el-tag.el-tag--info.is-hit) {
+  border: none;
+}
+:deep(.el-tag--default) {
+  padding: 0 4px;
+}
+:deep(.el-select__input) {
+  margin-left: 8px;
+}
+:deep(.input-search.el-select .el-input.is-focus .el-input__inner) {
+  border: none;
+  border-color: transparent !important;
+}
+:deep(.input-search.el-select .el-input__inner) {
+  border: none;
+  border-color: transparent !important;
+}
+:deep(.input-search.el-select .el-input__inner:focus) {
+  border: none;
+  border-color: transparent !important;
+}
+:deep(.input-with-select .el-input-group__prepend) {
+  background-color: #fff;
+}

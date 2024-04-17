@@ -1,0 +1,267 @@
+//scss变量
+
+// 页面一级标题
+.title-level-1 {
+  color: #1e2c50;
+  font-size: 14px;
+  font-family: PingFangSC-Medium, PingFang SC;
+}
+// 页面二级标题
+.title-level-2 {
+  color: #666;
+  font-family: PingFangSC-Medium, PingFang SC;
+}
+// 通用弹性布局
+.flex-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+//页面布局
+.page-flex-colunm {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+//表格父容器
+.table-parent-wrapper {
+  flex: 1;
+  position: relative;
+}
+//表格操作栏容器
+.table-operation-bar {
+  display: flex;
+  padding: 6px;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.operation-bar-right {
+  justify-content: flex-end;
+}
+.operation-bar-left {
+  justify-content: flex-start;
+}
+//表格分页容器
+.table-pagination-bar {
+  display: flex;
+  padding: 12px 12px 0 0;
+  justify-content: flex-end;
+  position: relative;
+}
+// @media screen and (min-width: 675) {
+//   .table-pagination-bar {
+//     display: none;
+//   }
+// }
+// @media screen and (max-width: 675) {
+//   .table-pagination-bar {
+//     display: flex;
+//   }
+// }
+
+/** 吸附表格 */
+.sticky-table-fix {
+  position: fixed;
+  top: 40px;
+  z-index: 100;
+  overflow: hidden;
+}
+
+//列表编辑区域
+.cell-edit-content {
+  text-align: center;
+}
+.cell-edit-input {
+  min-width: 80px;
+}
+.cell-edit-select {
+  min-width: 80px;
+}
+.cell-date-picker {
+  width: 120px !important;
+}
+//列表编辑取消、保存按钮
+.cell-btn-update {
+  font-size: 12px;
+  padding: 0 6px;
+  color: $href-text-color;
+  outline: none;
+  cursor: pointer;
+}
+//表格link类
+.cell-link,
+.cell-link:link,
+.cell-link:hover,
+.cell-link:visited,
+.cell-link:active {
+  color: $href-text-color;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cell-text {
+  line-height: 20px;
+}
+//表格文字按钮样式
+.option-btn-text {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: top;
+  font-size: 12px;
+  margin-right: 8px;
+  cursor: pointer;
+  color: #72a0fd;
+}
+//问号图标样式
+.el-tooltip-icon {
+  vertical-align: sub;
+  margin-left: 3px;
+}
+//文字溢出省略号
+.text-overflow-ellipsis {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.input-xxs-mini {
+  width: 60px;
+}
+
+.input-xs-mini {
+  width: 80px;
+}
+
+.input-xs-mi {
+  width: 120px;
+}
+/* a标签默认样式 */
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: #72a0fd;
+  text-decoration: none;
+  cursor: pointer;
+}
+.input-number-small.el-input-number--small {
+  width: 100px;
+  margin: 0 5px;
+}
+// 已开启
+.campaign-state {
+  min-width: 60px;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 5px;
+  text-align: center;
+  border-radius: 3px;
+}
+.state-enabled {
+  border: 1px solid #00a7ed;
+  color: #00a7ed;
+  background-color: #bbe9fc;
+}
+// 已暂停
+.state-paused {
+  border: 1px solid #eca249;
+  color: #eca249;
+  background-color: #fef6ed;
+}
+// 已归档
+.state-archived {
+  border: 1px solid #909399;
+  color: #909399;
+  background-color: #f4f4f5;
+}
+
+/**clearfix**/
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+//登陆注册logo
+.logo-view {
+  display: flex;
+  align-items: center;
+  margin: 60px 12px;
+  .app-title {
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #1e2c50;
+  }
+}
+.app-logo {
+  width: 40px;
+  height: 40px;
+  display: block;
+  overflow: hidden;
+  border-radius: 6px;
+  background-image: url("@/assets/logo_1024.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+// 规则样式
+.campagin-keyword-block {
+  width: 180px;
+  overflow: hidden;
+  color: #409eff;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 13px;
+  padding: 0 8px;
+  word-spacing: normal;
+  white-space: nowrap;
+  border: 1px solid #dcdfe6;
+}
+
+.rule-list-item {
+  padding: 12px;
+  margin-bottom: 6px;
+  border: 1px solid #ccc;
+}
+.rule-select-item {
+  font-size: 12px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+.rule-red-color {
+  color: red;
+  font-family: PingFangSC-Medium, PingFang SC;
+}
+
+.rule-time-condition {
+  margin: 0;
+  width: 400px;
+  max-height: 100px;
+  font-size: 12px;
+  padding: 4px 8px;
+  list-style: none;
+  overflow-y: auto;
+}
+.rule-opreta-icon {
+  margin-right: 5px;
+}
+.rule-metric-period {
+  color: #c0c4cc;
+  font-size: 12px;
+  transform: scale(0.9, 0.9);
+}
