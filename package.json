@@ -9,6 +9,11 @@
     "slj",
     "lanjing"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ihoment-lichao/s-lanjing-ui-fe.git"
+  },
+  "author": "ihoment-lichao",
   "files": [
     "dist/*"
   ],
