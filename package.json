@@ -1,7 +1,7 @@
 {
   "name": "s-lanjing-ui-fe",
   "private": false,
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "s-lanjing-ui-fe",
   "main": "./dist/s-lanjing-ui.umd.js",
   "module": "./dist/s-lanjing-ui.es.js",
